@@ -21,7 +21,7 @@ This project uses [uv](https://github.com/astral-sh/uv) for fast dependency mana
 ### Data Inspection
 To inspect the training data (COCO format):
 ```bash
-uv run src/data_inspection.py
+uv run src/01_data_inspection.py
 ```
 
 ## Project Structure
