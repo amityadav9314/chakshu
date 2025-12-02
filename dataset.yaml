@@ -1,0 +1,12 @@
+# YOLOv8 Dataset Configuration for Chakshu
+# Path to dataset root directory
+path: /media/aky/Data/AIML/Data/COCO_TD
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+train: train2017/train2017
+val: train2017/train2017  # Using same for now as we don't have separate val split yet
+test:  # optional
+
+# Classes
+names:
+  0: person

@@ -18,16 +18,17 @@
   - **YOLOv8 (`ultralytics`):** Object detection model.
   - **PyTorch:** (Planned/In-progress) Deep learning framework for model training.
 - **Data Format:** COCO (Common Objects in Context) for annotations.
+- **Hardware Acceleration:**
+  - **AMD GPU:** Supported via ROCm (Linux only).
+  - **Requirement:** For RDNA 3 cards (e.g., RX 7800 XT), set `HSA_OVERRIDE_GFX_VERSION=11.0.0`.
 
 ## 3. Data & Environment
 - **Dataset:** COCO format.
-- **OS Support:** Auto-detects Windows vs WSL/Linux and uses appropriate paths.
+- **OS Support:** Native Ubuntu (Linux).
 - **Locations:**
-  - **Windows:** `F:\Soft\AIML\Data\COCO_TD\train2017\train2017`
-  - **WSL/Linux:** `/mnt/f/Soft/AIML/Data/COCO_TD/train2017/train2017`
+  - **Data:** Configured in `src/constants.py`.
 - **Configuration:** 
-  - Paths managed via `src/constants.py` (auto-detection)
-  - Platform-specific paths in `src/win_constants.py` and `src/wsl_constants.py`
+  - Paths managed via `src/constants.py`.
 
 ## 4. Coding Guidelines & Rules
 - **Virtual Environment:** ALWAYS use `.venv` for all development work. `uv` automatically manages this.
